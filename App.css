@@ -1,0 +1,147 @@
+.page {
+  padding: 30px;
+}
+
+.summary-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  width: 190px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.task-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.task-card {
+  width: 280px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-card h3 {
+  margin: 0;
+}
+
+.task-description {
+  color: #555;
+  margin: 12px 0;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge.completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge.pending {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.priority {
+  font-weight: bold;
+}
+
+.priority.high {
+  color: #dc2626;
+}
+
+.priority.medium {
+  color: #ca8a04;
+}
+
+.priority.low {
+  color: #16a34a;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.spinner-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.empty-state {
+  background-color: white;
+  border: 1px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.empty-state-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  padding: 30px;
+}
